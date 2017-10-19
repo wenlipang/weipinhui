@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员俱乐部</title>
+	<link rel="shortcut icon" href="./images/vip.ico">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./style/normalize.css">
+ 	 <link rel="stylesheet" href="./js/Swiper-3.4.2/dist/css/swiper.css">
+	<link rel="stylesheet" href="./style/member.css">
+	<script src="./js/html5shiv.min.js"></script>
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/member.js"></script>
+		
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header">
+		<!-- 头部导航 -->
+		<nav class="top-nav clear">
+			<div class="nav-content  w">
+				<div class="area left">
+					<div class="area-btn tub">
+						<span class="province">上海</span>
+						<span class="fa fa-sort-desc icon"></span>
+						<span class="fa fa-sort-up icon2 "></span>
+					</div>
+					<div class="none-area" id="no">
+						<div class="none-box">
+							<p class="choice-title">请选择所在的收货地区</p>
+							<table class="province-table">
+								<tr>
+									<td>A</td>
+									<td>安徽</td>
+									<td>澳门</td>
+								</tr>
+								<tr>
+									<td>B</td>
+									<td>北京</td>
+								</tr>
+								<tr>
+									<td>C</td>
+									<td>重庆</td>
+								</tr>
+								<tr>
+									<td>F</td>
+									<td>福建</td>
+								</tr>
+								<tr>
+									<td>G</td>
+									<td>广东</td>
+									<td>广西</td>
+									<td>贵州</td>
+									<td>甘肃</td>
+								</tr>
+
+								<tr>
+									<td>H</td>
+									<td>河北</td>
+									<td>河南</td>
+									<td>海南</td>
+									<td>黑龙江</td>
+									<td>湖南</td>
+									<td>湖北</td>
+								</tr>
+								<tr>
+									<td>J</td>
+									<td>江苏</td>
+									<td>吉林</td>
+									<td>江西</td>
+								</tr>
+								<tr>
+									<td>L</td>
+									<td>辽宁</td>
+								</tr>
+								<tr>
+									<td>N</td>
+									<td>内蒙古</td>
+									<td>宁夏</td>
+								</tr>
+								<tr>
+									<td>Q</td>
+									<td>青海</td>
+								</tr>
+								<tr>
+									<td>S</td>
+									<td class="shang">上海</td>
+									<td>山西</td>
+									<td>山东</td>
+									<td>四川</td>
+									<td>陕西</td>
+								</tr>
+								<tr>
+									<td>T</td>
+									<td>台湾</td>
+									<td>天津</td>
+								</tr>
+								<tr>
+									<td>X</td>
+									<td>西藏</td>
+									<td>香港</td>
+									<td>新疆</td>
+								</tr>
+								<tr>
+									<td>Y</td>
+									<td>云南</td>
+								</tr>
+								<tr>
+									<td>Z</td>
+									<td>浙江</td>
+
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<ul class="choice right ">
+					<li id="first-li">
+						<ul class="and">
+							<li class="left-login lis line">
+								<span class="login">
+									<a href="./login.html">请登录</a>
+								</span>
+							</li>
+							<li class="right-login line"><a href="./register.html" class="lines">注册</a></li>
+						</ul>
+					</li>
+					<li class="come line">
+						<span class="come-icon"></span>
+						<span><a href="#" class="lines">签到有礼</a></span>
+					</li>
+					<li class="right-login line">
+						<a href="./login.html" class="lines">我的订单</a>
+					</li>
+					<li class="lis line tub">
+						<a href="./login.html" class="lines">我的特卖</a>
+						<span class="fa fa-sort-desc icon"></span>
+						<span class="fa fa-sort-up icon2 "></span>
+						<ul class="nav-lists">
+							<li><a href="#">品牌收藏(0)</a></li>
+							<li><a href="#">商品收藏(0)</a></li>
+							<li><a href="#">我的足迹(0)</a></li>
+						</ul>	
+						
+					</li>
+					<li class="lis line tub">
+						<a href="#" class="lines">会员俱乐部</a>
+						<span class="fa fa-sort-desc icon"></span>
+						<span class="fa fa-sort-up icon2 "></span>
+						<ul class="nav-lists same">
+							<li><a href="#">俱乐部首页</a></li>
+							<li><a href="#">唯品币兑换</a></li>
+							<li><a href="#">免费抽大奖</a></li>
+						</ul>
+					</li>
+					<li class="lis line tub">
+						<a href="#" class="lines">客户服务</a>
+						<span class="fa fa-sort-desc icon"></span>
+						<span class="fa fa-sort-up icon2 "></span> 
+						<ul class="nav-lists same">
+							<li><a href="#">联系客服</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">服务中心</a></li>
+							<li><a href="#">知识产权投诉</a></li>
+						</ul>
+					</li>
+					<li class="lis line" id="li-er">
+						<span class="mobile"></span>
+						<a href="#" class="lines">手机版</a>
+						<ul class="erweima">
+							<li><a href="#"><img src="./images/erweima.jpg" alt=""></a></li>
+							<li id="play"><a href="#" alt="二维码" class="buy">随时逛 及时抢</a></li>
+						</ul>
+					</li>
+					<li class="lis tub line">
+						<a href="#" class="lines">更多</a>
+						<span class="fa fa-sort-desc icon"></span>
+						<span class="fa fa-sort-up icon2 "></span>
+						<dl class="nav-lsits" id="more">
+							
+								<dt>合作专区</dt>
+								<dd><a href="#">联名卡申请</a></dd>
+								<dd><a href="#">唯品卡</a></dd>
+								<dd><a href="#">支付专区</a></dd>
+							
+							<span class="dotline"></span>
+							
+								<dt>关于我们</dt>
+								<dd><a href="#">Sell on vip</a></dd>
+								<dd><a href="#">品牌招商</a></dd>
+								<dd><a href="#">官方博客</a></dd>
+							
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="nav-low w" id="log">
+			<div class="login-list">
+				<div class="list-top">
+					<span class="bear left"></span>
+					<p>
+						<a href="#">
+							<span>您好!</span>
+							<span>[请登录]</span>
+						</a>
+					</p>
+				</div>
+				
+				<p class="login-choice">
+					<span>
+						<a href="#">我的收藏</a>
+						<a href="#" >我的订单</a>
+					</span>
+					<span>
+						<a href="#" >零钱</a>
+						<a href="#" >我的优惠券</a>
+					</span>
+					<span>
+						<a href="#">我的唯品币</a>
+						<a href="#" >唯品金融</a>
+					</span>
+				</p>
+			</div>
+		</div>
+		<!-- 头部logo -->
+
+		<div class="header-logo">
+			<div class="header-logo-in w">
+				<a href="./index.html">
+					<img src="./images/member-logo.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="head-bottom">
+			<div class="head-inner w">
+				<ul class="head-main-list">
+					<li><a href="#">俱乐部首页</a></li>
+					<li><a href="#">成长体系</a></li>
+					<li><a href="#">成长特权</a></li>
+					<li><a href="#">免费抽大奖</a></li>			
+				</ul>
+			</div>
+	</div>
+	</div>
+	<!-- <br class="clear"> -->
+	<!-- 中心 -->
+	<div class="mainback">
+		<div class="bjmain"></div>
+		<div class="main">
+		<div class="main-in w">
+			<div class="main-left left">
+				<div class="main-left-top">
+					<img src="./images/member-login.png" alt="">
+					<p>登录后可查看会员信息详情</p>
+					<a href="./login.html">马上登录</a>
+				</div>
+				<div class="main-left-bottom">
+					<div class="privilege">
+						<p>我的<br>特权</p>
+						<p>MY <br>PRIVILEGE</p>
+					</div>
+					<ul class="privilege-icon">
+						<li>
+							<div>
+								<a href="#"	title="唯品币超值兑" class="icon1"></a>
+								<a href="#"	title="生日祝福" class="icon2"></a>
+								<a href="#"	title="购物送唯品币" class="icon3"></a>
+								<a href="#"	title="会员专享价" class="icon4"></a>
+							</div>
+						</li>
+						<li>
+							<div>
+								<a href="#" title="黄钻专场" class="icon5"></a>
+								<a href="#" title="尊享客服" class="icon6"></a>
+								<a href="#" title="生日豪礼" class="icon7"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-right right">
+							<!-- Swiper -->
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide"><img src="./images/tu1.jpg" alt=""></div>
+			            <div class="swiper-slide"><img src="./images/tu2.jpg" alt=""></div>
+			        
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination" id="btn-icon-bjs"></div>
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next" ></div>
+			        <div class="swiper-button-prev" ></div>
+			    </div>
+
+			    <div class="main-right-bottom">
+			    	<a href="#"><img src="./images/new1.jpg" alt=""></a>
+			    	<a href="#"><img src="./images/new2.jpg" alt=""></a>
+			    	<a href="#"><img src="./images/new3.jpg" alt=""></a>
+			    </div>
+
+			</div>
+
+		</div>
+		<br class="clear">
+		<div class="main-conbj">
+			<div class="main-con w">
+				<div class="distance">
+					<div class="con-top w">
+						<div class="con-top-title left">
+							<span>唯品币超值兑</span>
+						</div>
+						<div class="gift left">
+						<span class="transform">缤纷好礼,超值换购</span>
+						<span class="arrow"></span>
+						</div>
+						<div class="change right">
+							<a href="#">兑换记录</a>
+					
+							<a href="#">查看更多</a>
+						</div>
+					</div>
+					<br class="clear">
+					<div class="con-in">
+					<div class="con-in-box">
+						<div class="box box1">
+							<a href="#"><img src="./images/box1.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">腾讯视频VIP会员5元现金抵用券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥5.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+						<div class="box">
+							<a href="#"><img src="./images/box2.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">e袋洗洗鞋50减10元券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥10.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+
+						<div class="box ">
+							<a href="#"><img src="./images/box3.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">搜狐视频黄金会员月卡8元优惠券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥8.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+						<div class="box">
+							<a href="#"><img src="./images/box4.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">诺心蛋糕全场30元券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥30.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+						<div class="box box1">
+							<a href="#"><img src="./images/box1.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">腾讯视频VIP会员5元现金抵用券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥5.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+						<div class="box">
+							<a href="#"><img src="./images/box2.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">e袋洗洗鞋50减10元券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥10.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+
+						<div class="box ">
+							<a href="#"><img src="./images/box3.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">搜狐视频黄金会员月卡8元优惠券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥8.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+						<div class="box">
+							<a href="#"><img src="./images/box4.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">诺心蛋糕全场30元券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥30.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="distance">
+					<div class="con-top w">
+						<div class="con-top-title left">
+							<span>整点秒杀</span>
+						</div>
+						<div class="gift left">
+						<span class="transform">0元秒杀,整点开枪</span>
+						<span class="arrow"></span>
+						</div>
+						<div class="change right">
+							<ul class="right-lis left">
+								<li><span>09月19日</span></li>
+								<li><span>09月20日</span></li>
+								<li><span>09月21日</span></li>
+								<li><span>09月22日</span></li>
+								<li><span>09月23日</span></li>
+								<li><span>09月24日</span></li>
+								<li><span>09月25日</span></li>
+							</ul>
+						</div>
+					</div>
+					<br class="clear">
+					<div class="con-in">
+					<div class="con-in-box">
+						<div class="box box1">
+							<a href="#"><img src="./images/box1.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">腾讯视频VIP会员5元现金抵用券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥5.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+						<div class="box">
+							<a href="#"><img src="./images/box2.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">e袋洗洗鞋50减10元券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥10.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+
+						<div class="box ">
+							<a href="#"><img src="./images/box3.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">搜狐视频黄金会员月卡8元优惠券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥8.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+						<div class="box">
+							<a href="#"><img src="./images/box4.jpg" alt=""></a>
+							<div class="box-bottom">
+								<a href="#" class="intru">诺心蛋糕全场30元券</a>
+								<div>
+									<p>9个唯品币</p>
+									<p>￥30.00</p>
+								</div>
+								<a href="#" class="raw">马上兑换</a>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				
+				<div class="distance">
+					<div class="con-top w">
+						<div class="con-top-title left">
+							<span>邮件专属</span>
+						</div>
+						<div class="gift left">
+						<span class="transform">邮箱会员专享优惠</span>
+						<span class="arrow"></span>
+						</div>
+					
+					</div>
+					<br class="clear">
+					<div class="con-in" id="belong">
+						<div class="con-in-box email">
+							<div class="vip">
+								<img src="./images/vip.jpg" alt="">
+							</div>
+						</div>
+						<div class="email-right">
+							<div class="email-right-in">
+								<p class="fast">快快订阅唯品会邮件,尊享邮件通道专属特权：</p>
+								<ul class="icon-lis">
+									<li>
+										<img src="./images/e1.png" alt="">
+										<p>专属优惠券</p>
+									</li>
+									<li>
+										<img src="./images/e2.png" alt="">
+										<p>好货<span>不错过</span></p>
+									</li>
+									<li>
+										<img src="./images/e3.png" alt="">
+										<p>尊贵<span>优先购</span></p>
+									</li>
+
+								</ul>
+								<br class="clear">
+								<div class="write">
+									<a href="#">完善资料,马上订阅</a>
+								</div>
+								<div class="buy">*如果您曾收到唯品会邮件，表明您已成功订阅。请继续关注，享更多特权和惊喜。</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+		<div class="bjmain-bottom"></div>
+	</div>
+
+	<!-- 返回顶部 -->
+
+	   <!-- Swiper -->
+    <div class="swiper-container backtop">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide backtop-tu" style="background-image:url(./images/top-tu.png)"></div>
+            <div class="swiper-slide" style="background-image:url(./images/top.png)" id="totop"></div>
+        
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination" id="dise"></div> -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'cube',
+        grabCursor: true,
+        cube: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94
+        }
+    });
+    </script>
+
+
+<!-- 轮播图 -->
+	 <!-- Swiper JS -->
+    <script src="./js/Swiper-3.4.2/dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+   		      var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+ 
+    </script>
+
+	<!--[if gt IE 8]> <!-->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<!--<![endif]-->
+
+	<!--[if lte IE 8]>
+	<script src="jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</body>
+</html>
+
+

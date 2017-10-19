@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="./images/vip.ico">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>唯品会网站登录</title>
+	<link rel="stylesheet" href="./style/normalize.css">
+	<link rel="stylesheet" href="./style/login.css">
+		<script src="./js/html5shiv.min.js"></script>
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/login.js"></script>
+</head>
+<body>
+	
+	<div class="header">
+		<div class="header-logo w">
+			<!-- 头部 -->
+			<div class="logo-in w">
+				<a href="./index.html"></a>
+				<span></span>
+			</div>
+			<br class="clear">
+			<!-- 中心 -->
+			<div class="main w">
+				<div class="login-check">
+					<div class="login-top">如有账号,请登录</div>
+					<div class="login-con">
+						<div class="login-item item1">
+							<input type="text" placeholder="手机号/用户名/邮箱" name="loginName" class="myinput" id="name">
+							<p class="form-tip cur" id="p-login-tip">请输入登录名</p>
+						</div>
+						<div class="login-item item2">
+							<input type="text" placeholder="密码" name="loginPwd" class="myinput" id="pwd">
+							<p class="form-tip cur" id="pwd-tip">请输入密码</p>
+						</div>
+						<div class="login-item item3">
+							<input type="text" placeholder="验证码" name="checkNum" class="myinput " id="checkMa">
+							<span class="img-check">
+								<img width="49" height="34" src="https://passport.vip.com/captcha/getCaptcha?type=0&amp;vipc=fCn5ZBfXP8dfHcnzvT5R4bXibid4a7TpcyYAWOAkC2mX4xtibiP4%2B%2FnKX5tZ%2FO9LC%2FVrRhvfXlvAs0iDG8rb39qqiLscN4KzsrLWhmRO470%3D&amp;v=1505714352502">
+							</span>
+							<a href="" class="change-num">换一张</a>
+							<p class="form-tip cur" id="yzm-tip">为了您的账户安全,请输入验证码</p>
+						</div>
+						<div class="login-btn">
+							<button type="submit" id="login-submit">
+								<span class="loading-before">登录</span>
+								<span class="loading-after cur">
+									<i class="loading"></i>
+									<span class="btn-text">处理中...</span>
+								</span>
+							</button>
+						</div>
+						<div class="work">
+							<span class="work-left">
+								<input type="checkbox">
+								<span>记住用户名</span>
+							</span>
+							<span class="work-right">
+								<a href="#">忘记密码?</a>
+								|
+								<a href="#">免费注册</a>
+							</span>
+						</div>
+						<br class="clear">
+						<div class="partner">
+							<p>合作网站账号登录:</p>
+							<p>
+								<a href="#" title="新浪微博" class="weibo"></a>
+								<a href="#" title="QQ" class="qq"></a>
+								<a href="#" title="支付宝" class="pay"></a>
+								<a href="#" title="微信" class="wechat"></a>
+								<a href="#" class="more">更多
+									<i class="fa fa-sort-desc icon right"></i>
+								</a>
+							</p>
+						</div>
+	
+						<br class="clear">
+						<div class="logoName">
+							<a href="#" title="网易">网易</a>
+							|
+							<a href="#" title="人人网">人人网</a>
+							|
+							<a href="#" title="建设登录">建设登录</a>
+							|
+							<a href="#" title="财付通">财付通</a>
+							
+							<a href="#" title="开心网">开心网</a>
+							|
+							<a href="#" title="中国移动">中国移动</a>
+							|
+							<a href="#" title="翼支付">翼支付</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer w">
+		<p>Copyright 2008-2017 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+	</div>
+
+		<!--[if gt IE 8]> <!-->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<!--<![endif]-->
+
+	<!--[if lte IE 8]>
+	<script src="jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</body>
+</html>

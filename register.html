@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>唯品会网站注册</title>
+	<link rel="shortcut icon" href="./images/vip.ico">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./style/normalize.css">
+	<link rel="stylesheet" href="./style/register.css">
+	<script src="./js/html5shiv.min.js"></script>
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/register.js"></script>
+</head>
+<body>
+	
+	<div class="header">
+		<div class="header-logo w">
+			<!-- 头部 -->
+			<div class="logo-in w">
+				<a href="./index.html"></a>
+				<span></span>
+			</div>
+			<br class="clear">
+			<!-- 中心 -->
+			<div class="main w">
+				<div class="login-check">
+					<div class="login-top">
+						<span>欢迎注册</span>
+						<span>已注册可<a href="index.html">直接登录</a></span>
+					</div>
+					<br class="clear">
+					<div class="login-con">
+						<div class="login-item item1">
+							<input type="text" placeholder="请输入手机号码" name="loginName" class="myinput" id="name">
+							<p class="form-tip cur" id="p-login-tip">请输入您的手机号码</p>
+						</div>
+						<div class="login-item item2">
+							<input type="password" placeholder="密码由6-20位字母，数字和符号组成" name="loginPwd" class="myinput" id="pwd">
+							<p class="form-tip cur" id="pwd-tip">请输入密码</p>
+						</div>
+						<div class="prePwd login-item">
+							<input type="password" placeholder="请再次输入上面的密码" class="myinput" id="rePwd">
+							<p class="form-tip cur" id="rePwd-tip">两次密码不一致</p>
+						</div>
+						<div class="login-item item3">
+							<input type="text" placeholder="短信验证码" name="checkNum" class="myinput " id="checkMa">
+							<span class="img-check">
+								获取验证码
+							</span>
+							<p class="form-tip cur" id="yzm-tip">为了您的账户安全,请输入验证码</p>
+						</div>
+						<div class="login-btn">
+							<button type="submit" id="login-submit">
+								<span class="loading-before">立即注册</span>
+								<span class="loading-after cur">
+									<i class="loading"></i>
+									<span class="btn-text">处理中...</span>
+								</span>
+
+							</button>
+
+						</div>
+						<p class="form-tip" id="register-tip">注册成功</p>
+						<br class="clear">
+						<div class="work">
+							<span class="work-left">
+								<input type="checkbox">
+								<span>记住用户名</span>
+							</span>
+							<span class="work-right">
+								<a href="#">忘记密码?</a>
+								|
+								<a href="#">免费注册</a>
+							</span>
+						</div>
+						<br class="clear">
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer w">
+		<p>Copyright 2008-2017 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+	</div>
+		<!--[if gt IE 8]> <!-->
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<!--<![endif]-->
+
+	<!--[if lte IE 8]>
+	<script src="jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</body>
+</html>
